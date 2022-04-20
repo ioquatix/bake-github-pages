@@ -31,8 +31,12 @@ def prepare(branch: "pages", directory: "pages")
 	
 	system("git", "worktree", "add", "--detach", "--no-checkout", worktree.to_s)
 	
-	# Ensure we have the latest branch from origin:
-	system("git", "fetch", "origin", branch)
+	begin
+		# Ensure we have the latest branch from origin:
+		system("git", "fetch", "origin", branch)
+	rescue
+		# Ignore.
+	end
 	
 	begin
 		# Try checking out the remote branch if it exists:
