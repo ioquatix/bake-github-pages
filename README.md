@@ -2,7 +2,7 @@
 
 Provides some bake tasks for deploying to GitHub Pages.
 
-[![Development Status](https://github.com/ioquatix/bake-gem/workflows/Development/badge.svg)](https://github.com/ioquatix/bake-gem/actions?workflow=Development)
+[![Development Status](https://github.com/ioquatix/bake-github-pages/workflows/Development/badge.svg)](https://github.com/ioquatix/bake-github-pages/actions?workflow=Development)
 
 ## Installation
 
